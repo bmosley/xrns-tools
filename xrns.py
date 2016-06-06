@@ -175,8 +175,12 @@ def process_xrns(xrns_filepath):
     cleanup()
 
 
-def extract(xrns_path):
-    return process_xrns(xrns_path)
+def extract(some_xrns_file_path):
+    """
+    Extract wavs from an xrns file to a "waves" dir:
+    /waves/I01-InstrumentName_S01-SampleName_[loop start]-[loop end].wav
+    """
+    return process_xrns(some_xrns_file_path)
 
 parser = ArghParser()
 parser.add_commands([extract])

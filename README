@@ -1,0 +1,11 @@
+usage: xrns.py extract [-h] some-xrns-file-path
+
+    Extract wavs from an xrns file to a "waves" dir:
+    /waves/I01-InstrumentName_S01-SampleName_[loop start]-[loop end].wav
+
+
+positional arguments:
+  some-xrns-file-path  -
+
+optional arguments:
+  -h, --help           show this help message and exit
